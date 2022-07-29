@@ -1,1 +1,86 @@
 /* TODO: Make it awesome */
+body {
+  background-color: bisque; 
+  /* background:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…qVRNochUAGQd9BAHDyiuiu1AkA08D41LKOQrtFQgUUUVCH//Z) */
+}
+
+header {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  padding-top: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  /* padding-top: 20px; */
+}
+
+header ul {
+  padding-left: 50px;
+  font-size: 35px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+li :first-child {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+li :nth-child(2) {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+main {
+  height: 700px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 45% 10% 45%;
+}
+
+main header {
+  background-color: bisque;
+}
+
+main h1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+footer {
+  background-color: cadetblue;
+}
+
+#catalog legend {
+  font-size: 2rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#catalog span :first-child {
+  font-size: 2rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#catalog span :nth-child(2) {
+  font-size: 2rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+ol {
+  font-size: 2rem;
+}
